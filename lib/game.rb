@@ -32,15 +32,15 @@ class Game
   def game_end
     if @status == "match nul"
       puts " "
-      puts "XOXOXOXOXOX"
+      puts "XOXOXOXOXOX".colorize(:cyan)
       puts "Match nul !"
-      puts "XOXOXOXOXOX"
+      puts "XOXOXOXOXOX".colorize(:cyan)
       puts " "
     else
       puts " "
-      puts "XOXOXOXOXOXOXOXOXOXOXOXOXOX"
+      puts "XOXOXOXOXOXOXOXOXOXOXOXOXOX".colorize(:cyan)
       puts "#{current_player.name} remporte la partie !"
-      puts "XOXOXOXOXOXOXOXOXOXOXOXOXOX"
+      puts "XOXOXOXOXOXOXOXOXOXOXOXOXOX".colorize(:cyan)
       puts " "
     end
   end
